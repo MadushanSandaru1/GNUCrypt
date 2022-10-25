@@ -14,10 +14,12 @@ public class Main {
 
         try {
             if (!str_to_encrypt.isEmpty()) {
+                // Encryption
                 System.out.println(str_to_encrypt+" -> "+GNUCrypt.encrypt("@1B2c3D4e5F6g7H8", str_to_encrypt));
             }
 
             if (!str_to_decrypt.isEmpty()) {
+                // Decryption
                 System.out.println(str_to_decrypt+" -> "+GNUCrypt.decrypt("@1B2c3D4e5F6g7H8", str_to_decrypt));
             }
         } catch (InvalidKeyException ex) {
