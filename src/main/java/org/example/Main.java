@@ -23,7 +23,7 @@ public class Main {
                 System.out.println(str_to_decrypt+" -> "+GNUCrypt.decrypt("@1B2c3D4e5F6g7H8", str_to_decrypt));
             }
         } catch (InvalidKeyException ex) {
-            System.out.println("ERROR: "+ex.getMessage());
+            System.out.println("ERROR: " + ex.getMessage());
         }
     }
 }
